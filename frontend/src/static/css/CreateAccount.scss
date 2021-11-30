@@ -1,0 +1,232 @@
+@import './base.scss';
+
+.nav-item {
+    padding-left: 2%;
+    padding-right: 2%;
+    font-size: 130%;
+
+}
+
+.wrapperCreateAccount {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    min-height: 950px;
+    max-height: 1200px;
+    overflow: hidden;
+}
+
+.createAccountForm {
+    background:$secondary-color;
+    position: absolute;
+    height: 75%;
+    width: 30%;
+    z-index: -1;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 10px 10px;
+    border-radius: 5%;
+}
+
+.createAccountTitle {
+    color: white;
+    font-size: 300%;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.firstName, .lastName, .username, .signUpEmailAddress, .signUpPassword, .signUpPasswordConfirm {
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: $input-width-desktop;
+    
+    input {
+        min-height: 40px;
+        max-height: 40px;
+    }
+}
+
+.firstName {
+    top: 35%;
+}
+
+.lastName{
+    top: 42%;
+}
+
+.username {
+    top: 49%;
+}
+
+.signUpEmailAddress {
+    top: 56%;
+}
+
+.signUpPassword {
+    top: 63%;
+}
+
+.signUpPasswordConfirm {
+    top: 70%;
+}
+
+.createAccountErrors {
+    position: absolute;
+    width: 40% !important;
+    text-align: center;
+    color: red;
+    top: 77%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.createAccountSubmit {
+    z-index: 1;
+    color: white;
+    font-size: 110%;
+    position: absolute;
+    top: 81% !important;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    button {
+        border-radius: 20px;
+    }
+}
+
+.loginLink {
+    z-index: 1;
+    color: white;
+    font-size: 110%;
+    position: absolute;
+    top: 88% !important;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+@media only screen and (min-width: 2501px) {
+    .firstName, .lastName, .username, .signUpEmailAddress, .signUpPassword, .signUpPasswordConfirm {
+        width: $input-width-4k;
+        input {
+            height: 3vh;
+            font-size: $font-size-4k;
+        }
+    }
+
+    .loginLink {
+        font-size: $font-size-4k;
+        top: 82%;
+    }
+
+    .createAccountSubmit {
+        button {
+            font-size: 150%;
+            width: 110%;
+        }
+    }
+}
+
+@media only screen and (min-width: 1501px) and (max-width: 2500px) {
+    
+    .wrapperCreateAccount {
+        top: -3%;
+    }
+
+    .createAccountForm {
+        width: 45%;
+    }
+
+
+}
+
+@media only screen and (min-width: 701px) and (max-width: 1500px) {
+    
+    .wrapperCreateAccount {
+        top: -3%;
+    }
+    
+    .createAccountForm {
+        width: 55%;
+    }
+
+    .firstName, .lastName, .username, .signUpEmailAddress, .signUpPassword, .signUpPasswordConfirm {
+        width: 40% !important;
+    }
+    
+    .createAccountTitle {
+        top: 25%;
+        font-size: 250%;
+        font-weight: 500;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+
+    .createAccountForm {
+        top: 360px;
+        width: 80%;
+        height: 550px;
+    }
+    
+    .createAccountTitle {
+        font-size: 150%;
+        font-weight: 500;
+        top: 120px;
+    }
+
+    .loginBackground {
+        height: 150%;
+    }
+    
+    .firstName, .lastName, .username, .signUpEmailAddress, .signUpPassword, .signUpPasswordConfirm {
+        width: 60% !important;
+    }
+
+    .firstName {
+        top: 180px;
+    }
+    
+    .lastName{
+        top: 240px;
+    }
+    
+    .username {
+        top: 300px;
+    }
+    
+    .signUpEmailAddress {
+        top: 360px;
+    }
+    
+    .signUpPassword {
+        top: 420px;
+    }
+    
+    .signUpPasswordConfirm {
+        top: 480px;
+    }
+
+
+    .createAccountErrors {
+        top: 540px;
+    }
+    
+    .createAccountSubmit {
+       top: 580px;
+    }
+
+    .loginLink {
+        top: 620px;
+        font-size: 120%;
+        text-align: center;
+    }
+}

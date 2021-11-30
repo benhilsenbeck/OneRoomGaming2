@@ -1,0 +1,168 @@
+@import './base.scss';
+
+body, html {
+    min-width: 100%;
+    min-height: 100%;
+    position: absoulte;
+    background-color: $primary-color; 
+}
+
+.videoBackground {
+    position: fixed;
+    z-index: -2;
+}
+
+.navbar {
+    background-color: #161b22  !important;
+}
+
+
+.item1 {
+    width: 240px;
+
+}
+
+.nav-item a:hover {
+    color: #b366ff !important;
+}
+
+.nav-link{
+    color: White !important;   
+}
+
+.mainSection {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    min-height: 950px;
+    max-height: 1200px;
+    overflow: hidden;
+}
+
+
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline-color: whitesmoke;
+}
+
+.link:hover {
+    color: #b366ff !important;
+}
+
+
+.link{
+    color: White !important;
+    font-size: 80%;
+}
+
+.introduction{
+    z-index: -1;
+    position:fixed;
+    height: 100%;
+    width: 100%;
+    background-color: Black;
+}
+
+.title1, .title2, .title3 {
+    color: White;
+    font-size: 350%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content {
+    z-index: 1;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 30%;
+    min-height: 35%;
+    padding: 20px;
+    text-align: center;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.logo {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+}
+
+.getStarted {
+    position: absolute;
+    top: 140% !important;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+@media only screen and (min-width: 2501px) {
+
+    .getStarted {
+        top: 160% !important;
+        font-size: 180% !important;
+    }
+
+}
+
+
+@media only screen and (min-width: 1501px) and (max-width: 2500px) {
+    .getStarted {
+        top: 165%;
+    }
+
+    .logo {
+        width: 80%
+    }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 1500px) {
+    
+    .getStarted {
+        top: 130% !important;
+        font-size: 100% !important;
+    }
+
+    .logo {
+        width: 100%
+    }
+
+}
+
+  
+
+
+@media only screen and (max-width: 700px) {
+    .getStarted {
+        top: 120% !important;
+        font-size: 100% !important;
+    }
+
+    
+
+    .navbar {
+        position: fixed !important;
+        width: 100%;
+        z-index: 2;
+    }
+
+    .title1, .title2, .title3 {
+        text-align: center;
+        font-size: 280%;
+    }
+
+    .logo {
+        width: 120% !important;
+    }
+   
+}

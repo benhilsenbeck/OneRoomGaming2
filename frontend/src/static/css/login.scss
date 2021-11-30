@@ -1,0 +1,192 @@
+@import './base.scss';
+
+.loginBackground {
+    background: $primary-color;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+.wrapper {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    min-height: 950px;
+    max-height: 1200px;
+    overflow: hidden;
+}
+
+.loginForm {
+    background:$secondary-color;
+    position: absolute;
+    height: 47%;
+    width: 30%;
+    z-index: -1;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 2px 1px 10px 5px;
+    border-radius: 15%;
+}
+
+.loginTitle, .emailAddress, .password, .errorMessage, .loginSubmit, .createAccountLink {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.emailAddress, .password {
+    width: $input-width-desktop;
+
+    input {
+        min-height: 40px;
+        max-height: 40px;
+    }
+}
+
+.form-control {
+    border-radius: 20px !important;
+}
+
+.loginTitle {
+    color: white;
+    font-size: 300%;
+    top: 35%;
+}
+
+.emailAddress {
+    top: 45%;
+}
+
+.password {
+    top: 50%;
+}
+
+.errorMessage {
+    width: 40% !important;
+    text-align: center;
+    color: red;
+    top: 55%;
+}
+
+.loginSubmit {
+    font-size: $font-size-desktop;
+    top: 60%;
+
+    button {
+        border-radius: 20px;
+    }
+}
+
+.createAccountLink {
+    font-size: $font-size-desktop;
+    top: 65%;
+}
+
+@media only screen and (min-width: 2501px) {
+    .loginTitle {
+        font-size: 450%;
+    }
+    
+    .emailAddress, .password {
+        width: $input-width-4k;
+        input {
+            height: 3vh !important;
+            font-size: $font-size-4k;
+        }
+    }
+
+    .loginForm {
+        border-radius: 50px;
+    }
+
+    .errorMessage {
+        top: 53%;
+        font-size: $font-size-4k;
+    }
+
+    .loginSubmit{
+        top: 58%;
+        button {
+            font-size: $font-size-4k;
+            width: 110%;
+        }
+    }
+
+    .createAccountLink {
+        top: 63%;
+        font-size: $font-size-4k;
+    }
+}
+
+@media only screen and (min-width: 1501px) and (max-width: 2500px) {
+    
+    .wrapper {
+        top: -3%;
+    }
+
+    .loginForm {
+        width: 35%;
+        border-radius: 8%;
+    }
+
+}
+
+@media only screen and (min-width: 701px) and (max-width: 1500px) {
+
+    .wrapper {
+        top: -3%;
+    }
+
+    .loginForm {
+        width: 55%;
+        border-radius: 8%;
+    }
+
+    .emailAddress, .password {
+        width: 40% !important;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    .loginForm {
+        top: 280px;
+        width: 80%;
+        height: 360px;
+    }
+    
+    .loginTitle {
+        top: 150px;
+    }
+
+    .emailAddress, .password {
+        width: $input-width-mobile;
+    }
+    
+    .emailAddress {
+        top: 220px;
+    }
+
+    .password {
+        top: 290px !important;
+    }
+    
+    
+    .errorMessage {
+        top: 340px;
+    }
+
+
+    .loginSubmit {
+        top: 380px;
+    }
+
+    .createAccountLink {
+        font-size: $font-size-mobile;
+        text-align: center;
+        top: 430px;
+    }
+}

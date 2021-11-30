@@ -1,0 +1,335 @@
+@import './base.scss';
+
+.dashboardBackground {
+    background-color: $primary-color;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+.wrapperDashboard {
+    min-width: 100%;
+    height: 100%;
+}
+
+
+.loadingSpinner {
+    position: absolute;
+    left: 50%;
+    top:45%;
+    transform: translate(-50%, -50%);
+}
+
+.loadingTitle {
+    color: white;
+    font-size: 130%;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+}
+
+.leagueUsername {
+    width: 90% !important;
+}
+
+.cont1 {
+    min-width: 800px;
+}
+
+.cont5 {
+    position: absolute;
+    left: 50%;
+    top:45%;
+    transform: translate(-50%, -50%);
+    min-width: 800px;
+
+    p {
+        color: white;
+        text-align: center;
+        padding-bottom: 2%;
+        font-size: 150%;
+    }
+
+    input {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 50% !important;
+
+    }
+}
+
+.summonerName {
+    text-align: center;
+    font-weight: 500;
+    font-size: 200%;
+    color: white;
+}
+
+.summonerLevel  {
+    text-align: center;
+    font-weight: 500;
+    font-size: 160%;
+    color: white;
+}
+
+.logo2, .logo1, .summonerName {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.logo2, .logo1 {
+    width: 45%;
+    padding: 0;
+
+}
+
+.logo1{
+    margin: auto !important;
+}
+
+.logo2 {
+    margin: auto !important;
+}
+
+.soloContainer, .flexContainer {
+    text-align: center;
+    p {
+        color: white;
+    }
+}
+
+.usernameSearch {
+    width: 100%;
+    min-width: 800px;
+
+    input {
+        margin: auto !important;
+        width: 30%;
+    }
+}
+
+.hiddenSubmitButton {
+    visibility: hidden;
+}
+
+.totalScore {
+    color: white;
+    font-size: 200%;
+    
+}
+
+.cont2 {
+    text-align: center;
+    padding-top: 6%;
+    min-width: 800px
+}
+
+.box5 {
+    background-color: $secondary-color;
+    width: 20% !important;
+    position: absolute;
+    left: 15%;
+    top: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.box6 {
+    width: 50% !important;
+    padding-bottom: 5%;
+}
+
+.scores {
+    width: 60% !important;
+    margin:auto !important;
+    .col {
+        background-color: $secondary-color;
+    }
+}
+
+.errorMessageD{
+    color: red;
+}
+
+.leagueGameBoxes {
+    margin-bottom: 3% !important;
+}
+
+.gameBoxes {
+    box-sizing: content-box;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    background: $secondary-color;
+    width: 55% !important;
+    cursor: pointer;
+
+    .progress {
+        width: 10.5%;
+        position: absolute;
+        left: 55.5%;
+        margin-top: 3.2%;
+    }
+
+    .progress-bar {
+        color: black;
+        font-weight: 700;
+        font-size: 120%;
+    }
+
+    .personalBDM {
+        margin-left: auto !important;
+        margin-right: 4% !important;
+        margin-top: 4% !important;
+        color: white;
+        float: right;
+        background-color: $tertiary-color;
+        width: 10%;
+        font-weight: 500;
+        font-size: 150%;
+    }
+
+    .playerKDA {
+        position: absolute;
+        left: 32.2%;
+        width: 30%;
+        text-align: center;
+        margin-top: 2.6% !important;
+        color: white;
+        font-weight: 600;
+        font-size: 120%;
+    }
+
+    img {
+        width: 15%;
+        float: left;
+        border-radius: 50%;
+    }
+}
+
+.hideBox {
+    display: none
+}
+
+.gameBoxesContent {
+    width: 55%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    background-color: $tertiary-color;
+
+    .otherPlayers {
+        width: 100%;
+        padding: 0;
+
+            .progress-bar {
+                color: black;
+                font-weight: 700;
+                font-size: 120%;
+            }
+
+            .alliedTable {
+            width: 100%;
+            border-collapse: collapse;
+            color: white;
+
+            .tableTitlesAllies{
+                background-color: $secondary-color;
+            }
+
+            .otherPlayerKDA {
+                font-weight: 700;
+            }
+
+            .titleAllies {
+                float: left;
+                margin-left: 5% !important;
+            }
+
+            .BDMScore{
+                font-size: 110%;
+                font-weight: 500;
+                p{
+                    margin-top: 5%;
+                }
+            }
+
+            .tableImages {
+                img {
+                    margin-top: 6%;
+                    margin-left: 2% !important;
+                    float:left;
+                    padding-right: 2%;
+                    width: 22%;
+                    border-radius: 50%;
+                }
+
+                p {
+                    margin-top: 8%;
+                    float: left;
+                    padding-left: 3%;
+                    font-size: 80%;
+                }
+            }
+
+            td {
+                padding-top: 2%;
+            }
+
+    
+            .column1 {
+                width: 30%;
+            }
+            
+            .column2 {
+                width: 30%;
+            }
+
+            .column3 {
+                width: 20%;
+            }
+    
+            .column4 {
+                width: 20%;
+            }
+    
+        }
+
+        .otherPlayersSection {
+            border-bottom: 1px solid white;
+        }
+
+        .otherPlayersBDM {
+            margin-left: auto !important;
+            padding-right: 3%;
+        }
+    }
+
+}
+
+
+.gameBoxes:hover {
+    box-sizing: content-box;
+    border: 2px solid $tertiary-color;
+}
+
+.redBox:hover {
+    border: 2px solid rgba(245,56,56,0.6755077030812324);
+}
+
+.greenBox:hover {
+    border: 2px solid rgba(56,245,87,0.6755077030812324);
+}
+
+.colorRed {
+    background: linear-gradient(130deg, rgba(13,17,23,0.9332107843137255) 60%, rgba(245,56,56,0.6755077030812324) 95%);
+}
+
+.colorGreen {
+    background: linear-gradient(130deg, rgba(13,17,23,0.9332107843137255) 60%, rgba(56,245,87,0.6755077030812324) 95%);
+}
+
+@media only screen and (max-width: 700px) {
+    
+   
+}
